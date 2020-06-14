@@ -1,0 +1,217 @@
+
+
+/* @font-face {
+    font-family: 'docteur_atomic';
+    src: url('docteur_atomic.eot'); 
+    src: url('docteur_atomic.eot?#iefix') format('embedded-opentype'),
+         url('docteur_atomic.woff2') format('woff2'), 
+         url('docteur_atomic.woff') format('woff'), 
+         url('docteur_atomic.ttf')  format('truetype'),
+         url('docteur_atomic.svg#svgFontName') format('svg');
+  } */
+
+  h1 {
+	text-align: center;
+	font-family: 'Docteur Atomic', arial;
+	font-size: 50px;
+	color: crimson;
+	font-weight: lighter;
+  }
+	
+
+.robot_dude {
+	border: transparent;
+	border-top: 20px;
+	border-left: dotted;
+	border-right: dotted;
+	border-radius: 100px;
+	border-width: thick 10px;
+}
+
+.robots {
+}
+ 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #5f93e8;
+}
+
+.head { 
+	background-color: crimson;
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+
+	.left_eye:hover & {
+		transform: scale(1.2);
+	}
+} 
+
+.left_eye, .right_eye { 
+	transition: all 1.9s; 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: whitesmoke; 
+	
+} 
+
+.right_eye:hover {
+	transform: scale(1.5)
+}
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 50px; 
+	left: 40px; 
+	transform: scale(1.4);
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 30px; 
+	left: 120px; 
+}
+
+.mouth {
+	background: white;
+	border-radius: 10px;
+	height: 40px;
+	margin: 20px;
+	width: 30px;
+	position: relative;
+	left: 56px;
+	top: 30px;
+	transition: all 1s;
+}
+
+.mouth:hover {
+	transform: rotate(360deg);
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex;
+	position: relative;
+	left: 516px;
+
+
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+
+.left_arm:hover {
+	transform: rotate(11deg)
+}
+
+.right_arm { 
+	margin-left: 10px; 
+	transition: transform 0.2s;
+} 
+
+.right_arm:hover {
+	transform: translate(-5px, -10px);
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	margin-right: 0 auto;
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+	position: relative;
+
+} 
+
+.its_a_tail_you_pervert {
+	background: #5f93e8;
+	border-radius: 20px;
+	height: 65px;
+	/* flex-wrap: wrap;
+	display: flex;
+	justify-content: center; */
+	margin: 84px;
+	margin-top: -205px;
+	width: 30px;
+	transition: all 0.3s;
+
+	
+}
+
+.its_a_tail_you_pervert:hover {
+	transform: rotate(25deg);
+}
+
+.left_leg, .right_leg { 
+	width: 50px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 0 auto; 
+	position: relative;
+	left: 19px;
+	top: 25px;
+	rotate: 10deg;
+	transition: transform 5sec;
+	} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin: 0 auto; 
+	position: relative;
+	left: 56px;
+	bottom: 95px;
+	}
+
+	.right_leg:hover {
+		-webkit-transform: rotate(-25deg);
+		-moz-transform: rotate(-25deg);
+		-o-transform: rotate(-25deg);
+		-ms-transform: rotate(-25deg);
+		transform: rotate(-25deg);
+	}
+
+
+
+
+
+
+
+
+
